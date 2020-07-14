@@ -82,6 +82,93 @@
     text-align: center;
     padding: 3rem 7rem;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.footer {
+  font-family: "Roboto";
+  background-color: #031a5c;
+  color: #fff;
+  padding: 4rem 6rem;
+}
+
+.footer__top-section {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer__top-section {
+    margin-bottom: 3rem;
+  }
+}
+
+.footer__logo {
+  width: 80px;
+  height: 70px;
+}
+
+@media only screen and (min-width: 500px) {
+  .footer__logo {
+    width: 200px;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .footer__logo {
+    width: 380px;
+    height: 120px;
+  }
+}
+
+.footer__links {
+  margin: auto 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1205px) {
+  .footer__links {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer__link {
+  margin-bottom: 1.4rem;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1205px) {
+  .footer__link {
+    margin-right: 3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer__link {
+    font-size: 1.1rem;
+  }
+}
+
+.footer__social-link {
+  padding-right: 0.5rem;
+}
+
+.footer__bottom-section {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer__bottom-section {
+    font-size: 1.1rem;
+  }
+}
+
 </style>
 <body>
 
@@ -153,16 +240,26 @@
     
     
 
-    <div>
-        <h3> AT SHORTER </h3>
-        <h3> YOUR PATH TO POSSIBLE STARTS WITH...</h3>
-        <h2>Transferability</h2>
-        <p>
-            We nurture our student's dreams of a simplified path to college. Spend your 
-            first two years with us then transfer to most colleges in the state. To view information regarding 
-            courses and their Transferability between shorter college and other participation colleges in the state of arkansas <a href="">Click here</a>
-            <button>Learn more</button>
-        </p>
-    </div>
+    <div class="layout">
+        <div class="footer">
+          <div class="footer__top-section">
+            <img class="footer__logo" alt="Grey PNGio" src="https://img.pngio.com/grey-adjective-definition-and-synonyms-macmillan-dictionary-grey-rectangle-png-480_320.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;">
+            <div class="footer__links">
+              <div class="footer__link">Apply</div>
+              <div class="footer__link">Visit</div>
+              <div class="footer__link">Donate</div>
+              <div class="footer__link">Make request</div>
+              <div class="footer__social-links">
+                <img class="footer__social-link" alt="Facebook-Icon" class="n3VNCb" src="https://oliveoilco.ca/wp-content/uploads/2016/06/Facebook-Icon-White-300x300.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;" style="width: 25px; height: 25px; margin: 0px;">
+                <img alt="White Instagram Icon" class="n3VNCb" src="https://icon-library.com/images/white-instagram-icon/white-instagram-icon-9.jpg" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;" style="width: 22px; height: 22px; margin: 0px;">
+                <img class="footer__social-link" alt="Twitter" class="n3VNCb" src="https://www.dayzerodiagnostics.com/static/images/twitter.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd,gvK6lb;" style="width: 25px; height: 25px; margin: 0px;">
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-section">
+            Shorter Colle / 604 N Locust St / North Little Rock, AR 72114 / 501.374.6408 / info@shortercollege.edu / Privacy Policy
+          </div>
+        </div>
+      </div>
 </body>
 </html>
