@@ -111,9 +111,28 @@ p {
   position: relative;
   font-size: 2rem;
 }
-#section-two-content {
 
+#yellow-nav {
+  background-color: #fcd304;
+  color: black;
+  margin: -9px auto; 
+  padding: 1rem 43rem;
 }
+
+@media only screen and (max-width: 500px) {
+  #yellow-nav {
+    width: 525px;
+    height: 80px;
+    display: flex;
+    padding: 1rem 16rem;
+  }
+}
+
+
+
+/* #section-two-content {
+
+} */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
@@ -211,7 +230,7 @@ p {
 
     <div id="section-one">
         <div id="section-one-justice-lady">
-            <div class="nav" style="background-color: #fcd304; color: black; margin: -9px -1rem; padding: 1rem 43rem;">
+            <div class="nav" id="yellow-nav">
                 <a style="color: black;" href="default.asp">Email</a>
                 <a style="color: black;" href="news.asp">Canvas</a>
                 <a style="color: black;" href="contact.asp">CAMS</a>
