@@ -27,8 +27,7 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 24px;
-  margin: 0rem 26px; 
+  font-size: 29px;
 }
 
 /* Change the color of links on hover */
@@ -40,7 +39,7 @@ p {
 /* Add a color to the active/current link */
 .nav a.active {
   background-color: #fcd304;
-  color: #00135C;
+  color: white;
 }
 
 @font-face {
@@ -48,16 +47,12 @@ p {
   src: url("./photos/Fonts/big_noodle_titling-webfont.woff");
 }
 @font-face {
-  font-family: OpenSansRegular;
-  src: url("./photos/Fonts/Open_Sans/opensans-regular-webfont.woff");
+  font-family: OpenSansBold;
+  src: url("./photos/Fonts/Open_Sans/opensans-bold-webfont.woff");
 }
 @font-face {
   font-family: bebasneue;
   src: url("./photos/Fonts/Bebas_Neue/bebasneue-regular-webfont.woff");
-}
-
-h1, h2, h3 {
-  font-family: bebasneue;
 }
 
 #section-one {
@@ -85,6 +80,7 @@ h1, h2, h3 {
     background-position-x: -3rem;
     background-position-y: 0rem;
     height: 33rem;
+    font-family: bebasneue;
 }
 #section-two-container-background-two {
     background-image: url("./photos/Shapes/Yellow and blue angled shape background.png");
@@ -92,10 +88,11 @@ h1, h2, h3 {
     background-size: 100% 100%;
     background-position-x: 1rem;
     background-position-y: 0rem;
-    height: 79rem;
+    height: 56rem;
     top: -12rem;
     position: relative;
     display: flex;
+    font-family: OpenSansBold;
 }
 .circle-photo {
     width: 15rem;
@@ -128,7 +125,6 @@ h1, h2, h3 {
   margin: -9px auto; 
   padding: 1rem 32rem;
   width: 100%;
-  font-family: OpenSansRegular;
 }
 
 #second-nav {
@@ -254,19 +250,6 @@ h1, h2, h3 {
   }
 }
 
-p {
-  font-family: OpenSansRegular;
-}
-
-a {
-  font-family: bebasneue;
-  font-weight: 100;
-}
-
-h1, h2, h3 {
-  font-weight: 100;
-}
-
 </style>
 <body>
 
@@ -280,22 +263,22 @@ h1, h2, h3 {
                 <a style="color: black;" href="about.asp">Donate</a>
             </div>    
             <div class="nav" id="second-nav">
-                <a href="default.asp">ABOUT</a>
+                <a class="active" href="default.asp">ABOUT</a>
                 <a href="news.asp">ADMISSIONS/AID</a>
                 <a href="contact.asp">ACADEMICS</a>
                 <a href="" style="width: 18%;" >
-                    <img style="width: 93%; top: -29px; position: relative;" src="./photos/Logos/Vector Wordmark reserved.png" alt="" srcset="">
+                    <img style="width: 93%;" src="./photos/Logos/Vector Wordmark reserved.png" alt="" srcset="">
                 </a>
                 <a href="about.asp">STUDENTS</a>
                 <a href="about.asp">ALUMNI</a>
-                <a class="active" href="about.asp">APPLY</a>
+                <a href="about.asp">APPLY</a>
             </div>
 
             <div id="section-one-title">
               <div>
-                <h4 style="color:#fcd304; font-family: myFirstFont; font-weight: 100; top: 21px; margin: 0; right: 2.5rem; position: relative; font-size: 40px;">YOUR PATH TO THE</h4>
-                <h1 style="color:#ffffff; font-size: 140px; position: relative; font-family: myFirstFont; right: 5px; font-weight: 100; margin: 0;">COURTROOM</h1>
-                <h3 style="color:#fcd304; margin: 0;">ASSOCIATE OF ARTS </h3> <h3 style="color:#ffffff; font-size: 78px; font-weight: 100; margin: 0; bottom: 42px; position: relative; left: 14rem; font-size: 37px;bottom: 42px; position: relative; left: 14rem; font-size: 37px;">CRIMINAL JUSTICE</h3>
+                <h4 style="color:#fcd304">YOUR PATH TO THE</h4>
+                <h1 style="color:#ffffff; font-size: 78px;">COURTROOM</h1>
+                <h3 style="color:#fcd304">ASSOCIATE OF ARTS CRIMINAL JUSTICE</h3>
               </div>
             </div>
     
@@ -370,17 +353,7 @@ h1, h2, h3 {
     </div>
 
     <div id="section-three">
-      <div>
-        <img src="./photos/Shorter Reporter Cover.jpg" alt="">
-      </div>
-      <div>
-        <h2>Campus news</h2>
-        <img src="./photos/News example.png" alt="">
-      </div>
-      <div>
-        <h2>Get Social</h2>
-        <img src="./photos/" alt="">
-      </div>
+
     </div>
     
     
