@@ -148,7 +148,9 @@ h1, h2, h3 {
 
 #second-nav {
   padding: 1rem 15rem;
-  bottom: 3rem;
+  top: 5rem;
+  position: relative;
+  z-index: 3;
 }
 #section-two-photos {
   display: flex;
@@ -316,6 +318,8 @@ h1, h2, h3 {
 
 .my_slide_container {
   width: 100%;
+  position: relative;
+  bottom: 13rem;
 }
 
 .slider_nav {
@@ -327,7 +331,7 @@ h1, h2, h3 {
 }
 
 .slider_controls {
-  bottom: 10rem;
+  bottom: 25rem;
   position: relative;
 }
 
@@ -351,13 +355,24 @@ h1, h2, h3 {
     <a style="color: black;" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/contact.asp">CAMS</a>
     <a style="color: black;" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/about.asp">Faculty/staff</a>
     <a style="color: black;" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/about.asp">Donate</a>
-</div> 
+</div class="header"> 
   <div class="slider">
+    <div class="nav" id="second-nav">
+      <a href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/default.asp">ABOUT</a>
+      <a href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/admissions.html">ADMISSIONS/AID</a>
+      <a href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/academics.html">ACADEMICS</a>
+      <a href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/index.html" style="width: 18%;">
+          <img style="width: 93%; top: -29px; position: relative;" src="./index_files/Vector Wordmark reserved.png" alt="" srcset="">
+      </a>
+      <a href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/about.asp">STUDENTS</a>
+      <a href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/about.asp">ALUMNI</a>
+      <a class="active" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/about.asp">APPLY</a>
+    </div>
+
     <div class="my_slide_container">
       <img class="my_slide_container-photo" src="./photos/Backgrounds/backgrounds/ChildcareBackground.png">
     </div>
-    <div class="my_slide_container">
-      <h1>hello world</h1>
+    <div class="my_slide_container"> 
       <img class="my_slide_container-photo" src="./photos/Backgrounds/backgrounds/Courtroom Background.png">
     </div>
     <div class="my_slide_container">
