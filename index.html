@@ -157,7 +157,7 @@ h1, h2, h3 {
 .section-two-photo {
   height: 10rem;
   width: 8rem;
-  margin: 2rem;
+  margin: 0;
 }
 #section-two-content {
   margin: 1rem 4rem;
@@ -182,7 +182,7 @@ h1, h2, h3 {
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 .footer {
-  font-family: "Roboto";
+  font-family: bebasneue;
   background-image: url("./photos/Shapes/Footer shape.png");
   background-repeat: no-repeat;
   background-size: 118rem;
@@ -272,7 +272,7 @@ h1, h2, h3 {
 
 p {
   font-family: OpenSansRegular;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 a {
@@ -300,6 +300,7 @@ h1, h2, h3 {
 .section-three-titles {
   font-size: 45px;
   color: #00135C;
+  font-family: myFirstFont;
 }
 .section-two-titles {
   left: 28rem;
@@ -313,11 +314,74 @@ h1, h2, h3 {
   color: #00135C;
 }
 
-</style></head>
+.my_slide_container {
+  width: 100%;
+}
+
+.slider_nav {
+
+}
+
+.slider {
+  height: 51.5rem;
+}
+
+.slider_controls {
+  bottom: 10rem;
+  position: relative;
+}
+
+.my_slide_container-photo {
+  width: 100%;
+}
+
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
 
 <body>
+
+    
+  <div class="nav" id="yellow-nav">
+    <a style="color: black;" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/default.asp">Email</a>
+    <a style="color: black;" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/news.asp">Canvas</a>
+    <a style="color: black;" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/contact.asp">CAMS</a>
+    <a style="color: black;" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/about.asp">Faculty/staff</a>
+    <a style="color: black;" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/about.asp">Donate</a>
+</div> 
+  <div class="slider">
+    <div class="my_slide_container">
+      <img class="my_slide_container-photo" src="./photos/Backgrounds/backgrounds/ChildcareBackground.png">
+    </div>
+    <div class="my_slide_container">
+      <h1>hello world</h1>
+      <img class="my_slide_container-photo" src="./photos/Backgrounds/backgrounds/Courtroom Background.png">
+    </div>
+    <div class="my_slide_container">
+      <img class="my_slide_container-photo" src="./photos/Backgrounds/backgrounds/Education Background.png">
+    </div>
+    <div class="my_slide_container">
+      <img class="my_slide_container-photo" src="./photos/Backgrounds/backgrounds/Ministry Background.png">
+    </div>
+    <div class="my_slide_container">
+      <img class="my_slide_container-photo" src="./photos/Backgrounds/backgrounds/Ownership Background.png">
+    </div>
+    
+    <div class="slider_controls nav">
+
+      <a class="active slider_control_button" onclick="currentDiv(1)">CHILD DEVELOPMENT</a>
+      <a class="slider_control_button" onclick="currentDiv(2)">CRIMINAL JUSTICE</a>
+      <a class="slider_control_button" onclick="currentDiv(3)">GENERAL STUDIES</a>
+      <a class="slider_control_button" onclick="currentDiv(4)">CHRISTIAN LEADERSHIP</a>
+      <a class="slider_control_button" onclick="currentDiv(5)">ENTREPRENUARIAL STUDIES</a> 
+    </div>
+  </div>
+    
   
-    <div id="section-one">
+    <!-- <div id="section-one">
         <div id="section-one-justice-lady">
             <div class="nav" id="yellow-nav">
                 <a style="color: black;" href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/default.asp">Email</a>
@@ -354,12 +418,12 @@ h1, h2, h3 {
                 <a href="file:///C:/Users/antho/dev/shorter/dogeTheCoder.github.io/about.asp">ENTREPRENUARIAL STUDIES</a>     
             </div>
         </div>
-    </div>
+    </div> -->
    
     <div id="section-two-container">
 
         <div id="section-two-container-background-one">
-            <h3 class="section-two-titles" style="top: 3rem; left: 23rem;">AT SHORTER</h3>
+            <h3 class="section-two-titles" style="top: 7rem; left: 18.5rem; font-size: 42px;">AT SHORTER</h3>
                     <h1 class="section-two-titles" style="font-size: 64px; margin: 0;">, YOUR PATH TO POSSIBLE STARTS WITH...</h1>
             <div id="section-two-container-background-one-content">
                 
@@ -369,7 +433,7 @@ h1, h2, h3 {
                 </div>
                 <div id="section-two-content">
                     
-                    <h3 id="section-two-title">AFFORTABILITY</h3>
+                    <h3 id="section-two-title">AFFORDABILITY</h3>
                     <p>
                         shortercollege has one of the lowest tuition rates in the states 175/hour.
                         click here to calculate your tuition. We also have finacial aid awards
@@ -419,7 +483,7 @@ h1, h2, h3 {
     <div id="section-three">
       <div class="section-three-content">
         <img class="section-three-photo" style="transform: rotate(-8deg);" src="./index_files/Shorter Reporter Cover.jpg" alt="">
-        <img class="section-three-photo" style="margin: 3rem 2rem;" src="./photos/Logos/The Shorter Reporter logo.png" alt="">
+        <img class="section-three-photo" style="margin: 3rem 2rem; width: 16rem;" src="./photos/Logos/The Shorter Reporter logo.png" alt="">
         <a href="#" style="text-align: center; padding: 14px 16px; text-decoration: none; font-size: 50px; margin: 0rem 26px;" class="active"> DOWNLOAD NOW   </a>
       </div>
       <div class="section-three-content">
@@ -473,4 +537,39 @@ h1, h2, h3 {
         </div>
       </div>
 
+      <script>
+      $(function(){
+          var $h3s = $('.slider_control_button').click(function(){
+              $h3s.removeClass('active');
+              $(this).addClass('active');
+          });
+      });
+
+        var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("my_slide_container");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-border-red", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-border-red";
+      }
+      </script>
 </body></html>
